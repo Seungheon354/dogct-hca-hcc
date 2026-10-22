@@ -1,0 +1,49 @@
+# =====================================================================
+# CRITICAL: never commit clinical data, DICOM, or identifiable manifests
+# =====================================================================
+data/
+*.xlsx
+*.xls
+*.dcm
+*.DCM
+*.nii
+*.nii.gz
+manifest*.csv
+Manifest*.csv
+*_scanned.csv
+
+# --- model artefacts / run outputs ---
+*.pkl
+*.pt
+*.pth
+*.npy
+*.npz
+checkpoints/
+runs_*/
+output_*/
+catboost_info/
+dogct_phase_SHAP_top20_and_models_*/
+cache_post/
+*_out/
+*_out_all/
+events.out.tfevents.*
+
+# --- archives ---
+*.7z
+*.zip
+*.tar.gz
+
+# --- figures (regenerate from code) ---
+*.png
+!docs/*.png
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# --- local config (may contain local paths) ---
+config.yaml

@@ -1,0 +1,107 @@
+cff-version: 1.2.0
+title: >-
+  Machine Learning-Based Multiphase CT Radiomics for Differentiating
+  Hepatocellular Carcinoma from Hepatocellular Adenoma in Dogs: analysis code
+message: >-
+  If you use this software, please cite both the software (this record) and the
+  associated journal article listed under "preferred-citation".
+type: software
+license: MIT
+version: 1.0.0
+date-released: "2026-10-22"
+repository-code: "https://github.com/REPLACE_USER/dogct-hca-hcc"
+doi: 10.5281/zenodo.XXXXXXX
+keywords:
+  - radiomics
+  - machine learning
+  - triple-phase CT
+  - hepatocellular carcinoma
+  - hepatocellular adenoma
+  - veterinary imaging
+  - SHAP
+  - dog
+abstract: >-
+  Custom analysis pipeline for differentiating canine hepatocellular carcinoma
+  (HCC) from hepatocellular adenoma (HCA) using radiomic features extracted from
+  triple-phase contrast-enhanced CT. Includes multiphase feature preprocessing,
+  SHAP-based feature ranking aggregated across stratified cross-validation folds,
+  a sequential Top-N feature-selection and multi-model comparison framework
+  (logistic regression, random forest, LightGBM, XGBoost, CatBoost, and
+  histogram-based gradient boosting), together with the out-of-fold probability
+  export used to construct the reported ROC curves.
+
+authors:
+  - family-names: Choi
+    given-names: Mihyun
+    affiliation: BON Animal Medical Center, Suwon, Republic of Korea
+  - family-names: Yoo
+    given-names: Jimin
+    affiliation: >-
+      Department of Veterinary Medical Imaging, College of Veterinary Medicine,
+      Chungbuk National University, Cheongju, Republic of Korea
+  - family-names: Chae
+    given-names: Seungheon
+    affiliation: Reliability Center, LS Mtron Co. Ltd., Anyang, Republic of Korea
+  - family-names: Jee
+    given-names: Hee-Jung
+    affiliation: >-
+      Department of Information Statistics, Chungbuk National University,
+      Cheongju, Republic of Korea
+  - family-names: Kim
+    given-names: Byungjin
+    affiliation: BON Animal Medical Center, Suwon, Republic of Korea
+  - family-names: Jeon
+    given-names: Sunghoon
+    affiliation: Haemaru Referral Animal Hospital, Seongnam, Republic of Korea
+  - family-names: Yoo
+    given-names: Gyu Sang
+    affiliation: >-
+      Department of Radiation Oncology, Chungbuk National University Hospital,
+      Cheongju, Republic of Korea
+  - family-names: Chang
+    given-names: Dongwoo
+    affiliation: >-
+      Department of Veterinary Medical Imaging, College of Veterinary Medicine,
+      Chungbuk National University, Cheongju, Republic of Korea
+  - family-names: Choi
+    given-names: Ahnryul
+    email: achoi@chungbuk.ac.kr
+    affiliation: >-
+      Department of Biomedical Engineering, College of Medicine, Chungbuk
+      National University, Cheongju, Republic of Korea
+  - family-names: Lee
+    given-names: Namsoon
+    email: ultravet@cbnu.ac.kr
+    affiliation: >-
+      Department of Veterinary Medical Imaging, College of Veterinary Medicine,
+      Chungbuk National University, Cheongju, Republic of Korea
+
+preferred-citation:
+  type: article
+  title: >-
+    Machine Learning-Based Multiphase CT Radiomics for Differentiating
+    Hepatocellular Carcinoma from Hepatocellular Adenoma in Dogs
+  year: 2026
+  journal: REPLACE_JOURNAL
+  doi: REPLACE_ARTICLE_DOI
+  authors:
+    - family-names: Choi
+      given-names: Mihyun
+    - family-names: Yoo
+      given-names: Jimin
+    - family-names: Chae
+      given-names: Seungheon
+    - family-names: Jee
+      given-names: Hee-Jung
+    - family-names: Kim
+      given-names: Byungjin
+    - family-names: Jeon
+      given-names: Sunghoon
+    - family-names: Yoo
+      given-names: Gyu Sang
+    - family-names: Chang
+      given-names: Dongwoo
+    - family-names: Choi
+      given-names: Ahnryul
+    - family-names: Lee
+      given-names: Namsoon
