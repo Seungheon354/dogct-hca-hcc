@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jan  3 16:44:10 2026
-
-@author: medict
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 Phase별(arterial/delayed/portal)
