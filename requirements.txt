@@ -1,7 +1,4 @@
-# Exact versions used to produce the results reported in the manuscript.
 # Python 3.13.5
-#
-# Install with:  pip install -r requirements.txt
 
 # --- core numerics / IO ---
 numpy==2.1.3
@@ -14,24 +11,9 @@ matplotlib==3.10.0
 PyYAML==6.0.2
 
 # --- machine learning / interpretability ---
-# NOTE: scikit-learn >=1.6 removed the private _get_tags API that CatBoost's
-# sklearn wrapper relies on, so CatBoostClassifier cannot be used inside a
-# sklearn Pipeline on >=1.6. Use scikit-learn <1.6 to reproduce the CatBoost
-# results reported in the manuscript; the other five classifiers are unaffected.
+# CatBoost's sklearn wrapper does not work inside a Pipeline with scikit-learn >= 1.6
 scikit-learn==1.5.2
 lightgbm==4.6.0
 xgboost==3.1.2
 catboost==1.2.8
 shap==0.50.0
-
-# --- synthetic data augmentation ---
-sdv==1.36.1
-ctgan==0.12.1
-
-# --- deep learning (CUDA 12.8 build; see README for CPU-only install) ---
-torch==2.8.0
-torchvision==0.23.0
-
-# --- medical imaging ---
-pydicom==3.0.1
-opencv-python==4.12.0.88

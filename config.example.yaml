@@ -1,58 +1,8 @@
-# ---------------------------------------------------------------------
-# Copy this file to `config.yaml` and edit the paths for your machine.
-# `config.yaml` is git-ignored so local paths are never published.
-#
-# Every script also honours the equivalent environment variable, e.g.
-#   DOGCT_FEATURES_XLSX=/path/to/features.xlsx python radiomics/run_phase_shap_topn.py
-# ---------------------------------------------------------------------
+# Copy to config.yaml (git-ignored) and edit for your machine.
+# Each key can also be set with an environment variable, e.g. DOGCT_FEATURES_XLSX.
 
-# === Radiomics (tabular) pipeline ===
-# Excel workbook of extracted radiomic features.
-# Expected layout: 3 header rows, then one row per case.
-#   header row 1 : feature group        (e.g. "diagnostics", "original")
-#   header row 2 : feature subgroup     (e.g. "Image-original")
-#   header row 3 : feature name         (e.g. "Mean"); cols 1-2 are "case", "tumor"
-# Feature columns must be an exact multiple of the number of phases,
-# ordered phase-block-wise: [arterial block][portal block][delayed block].
+# Radiomic feature workbook (see README for the expected layout)
 features_xlsx: data/dog_CT_features.xlsx
 
-# Number of leading metadata columns (default: "case", "tumor").
-meta_cols: 2
-
-# Contrast phases, in the column order they appear in the workbook.
-phases: [arterial, delayed, portal]
-
-# Largest feature-subset size evaluated in the sequential Top-N sweep.
-topn_max: 50
-
-# Cross-validation folds.
-n_splits: 5
-
-# Global random seed.
-seed: 42
-
-# Output directory for the radiomics pipeline (date tag is appended).
+# Output directory; the run date is appended
 radiomics_outdir: results/radiomics
-
-
-# === Imaging (deep learning) pipeline ===
-# Root directory containing the DICOM study tree.
-dicom_root: data/dicom
-
-# Annotated series manifest produced by imaging/build_manifest_uid_phase_filtered.py
-# Required columns: label, example_file, input label
-series_manifest: data/manifest_all_series_annotated.csv
-
-# Segmentation manifest for imaging/train_seg.py
-seg_manifest: data/manifest_hca_hcc_uid_phase.csv
-
-# Output directory for CAM / segmentation runs.
-imaging_outdir: results/imaging
-
-# CT display window used to convert Hounsfield units to 8-bit images.
-window_level: 50
-window_width: 400
-
-# Training schedule for the CAM classifier.
-cam_epochs: 8
-cam_batch_size: 8

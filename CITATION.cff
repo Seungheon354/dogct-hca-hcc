@@ -9,7 +9,7 @@ type: software
 license: MIT
 version: 1.0.0
 date-released: "2026-10-22"
-repository-code: "https://github.com/REPLACE_USER/dogct-hca-hcc"
+repository-code: "https://github.com/Seungheon354/dogct-hca-hcc"
 doi: 10.5281/zenodo.XXXXXXX
 keywords:
   - radiomics
