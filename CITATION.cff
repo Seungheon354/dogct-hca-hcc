@@ -8,6 +8,7 @@ message: >-
 type: software
 license: MIT
 version: 1.0.0
+doi: 10.5281/zenodo.23582592
 date-released: "2026-10-22"
 repository-code: "https://github.com/Seungheon354/dogct-hca-hcc"
 keywords:

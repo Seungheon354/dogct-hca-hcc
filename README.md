@@ -7,7 +7,7 @@ Analysis code for the study:
 > Hepatocellular Carcinoma from Hepatocellular Adenoma in Dogs.**
 > *[JOURNAL]* (2026). doi:[ARTICLE DOI]
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23582592.svg)](https://doi.org/10.5281/zenodo.23582592)
 
 The script takes a table of PyRadiomics features extracted from triple-phase CT
 (arterial, portal, delayed) and, for each phase and for all phases combined,
@@ -80,7 +80,7 @@ available from the corresponding authors on reasonable request.
 
 ## Citation
 
-Please cite the paper above and the archived code (doi:10.5281/zenodo.XXXXXXX).
+Please cite the paper above and the archived code (doi:10.5281/zenodo.23582592).
 See `CITATION.cff`.
 
 ## License
