@@ -10,7 +10,6 @@ license: MIT
 version: 1.0.0
 date-released: "2026-10-22"
 repository-code: "https://github.com/Seungheon354/dogct-hca-hcc"
-doi: 10.5281/zenodo.XXXXXXX
 keywords:
   - radiomics
   - machine learning
@@ -82,8 +81,6 @@ preferred-citation:
     Machine Learning-Based Multiphase CT Radiomics for Differentiating
     Hepatocellular Carcinoma from Hepatocellular Adenoma in Dogs
   year: 2026
-  journal: REPLACE_JOURNAL
-  doi: REPLACE_ARTICLE_DOI
   authors:
     - family-names: Choi
       given-names: Mihyun
